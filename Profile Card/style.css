@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,500;1,300;1,400&family=Roboto&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.container {
+  max-width: 370px;
+  width: 100%;
+  background-color: white;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container::before{
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 36%;
+  width: 100%;background-color: #4070f4;
+border-radius: 24px 24px 0 0;
+
+}
+.image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color:#0000ff;
+  padding: 3px;
+  margin-bottom: 8px;
+}
+.image .profile {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.container .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+.text .name{
+  font-size:24px; 
+  font-weight: 500;
+}
+.text .job{
+  font-size: 22px;
+  font-weight: 400;
+}
+ .container .media-buttons {
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+
+}
+.media-buttons .link{
+  text-decoration: none;
+  color: white;
+  background-color: #4070f4;
+  border-radius: 50%;
+  margin: 0 8px;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ font-size:20px;
+}
+.container .spray{
+  display: flex;
+  
+  align-items: center;
+  margin-top:24px;
+}
+.spray .hit{
+  background-color: #4070f4;
+  color: white;
+  border-radius: 24px;
+  padding: 9px 24px;
+  margin: 0 10px;
+  font-size: 14px;
+  border:none;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.spray .hit:hover {
+background-color: blue;
+}
+.container .cards {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.cards .data {
+  display: flex;
+  align-items: center;
+  border-right: 2px solid #e7e7e7;
+  padding: 0 20px;
+  color: #333;
+
+}
+.data:last-child{
+  border-style: none;
+}
+.data i{
+  font-size:18px ;
+margin-right: 6px;
+}
